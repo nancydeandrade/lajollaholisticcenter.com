@@ -472,7 +472,10 @@
   <section class="contact" id="contact">
     <h2>Start a Conversation</h2>
     <p>For inquiries, partnerships, or program consultations</p>
-    <form class="contact-form" action="https://formspree.io/f/meedjojz" method="POST">
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="3a975fc4-1547-42e7-a017-6082a349a0fa" />
+      <input type="hidden" name="redirect" value="http://lajollaholisticcenter.com" />
+      <input type="hidden" name="subject" value="New Inquiry — La Jolla Holistic Center" />
       <div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your full name" required />
@@ -500,7 +503,6 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="How can we help?"></textarea>
       </div>
-      <input type="hidden" name="_next" value="http://lajollaholisticcenter.com" />
       <button type="submit" class="submit-btn">Send Inquiry</button>
     </form>
   </section>
